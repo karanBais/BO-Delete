@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Booking Appointment App</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head> 
+<body> 
+    <form onsubmit="saveToLocalStorage(event)" class="form-group mt-3 w-50 p-5 mx-auto border border-primary border-5"> 
+        <label class="font-weight-bold">Name</label> 
+        <input type="text" class="form-control  " id="username" name="username" required/> 
+ 
+        <label class="font-weight-bold">Email-Id</label> 
+        <input type="email" class="form-control" id="email" name="emailId" required/> 
+ 
+        <label class="font-weight-bold">Phone Number</label> 
+        <input type="tel" class="form-control  " id="phonenumber" name="phonenumber" required/> 
+ 
+        <button class="btn btn-info mt-2">Submit</button> 
+    </form> 
+ 
+    <ul id="listOfUsers" class="list-inline text-center mx-auto"></ul> 
+ 
+    <script src="index.js"></script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+ 
+</body> 
+</html>
